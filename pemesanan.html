@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Wisata</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">Kembali Ke Beranda</a>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h1>Pesan Paket Wisata</h1>
+        <p><b>Silahkan isi formulir pemesanan berikut ini</b></p>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <h2>Rincian Paket Wisata</h2>
+        <table>
+          <tr>
+            <th>Nama Wisata</th>
+            <th>Lokasi</th>
+            <th>Harga</th>
+          </tr>
+          <tr>
+            <td id="namaWisata"></td>
+            <td id="lokasiWisata"></td>
+            <td id="hargaWisata"></td>
+          </tr>
+        </table>
+        <h2>Formulir Pemesanan</h2>
+        <form id="orderForm">
+          <div>
+            <label for="namaLengkap">Nama Lengkap:</label>
+            <input type="text" id="namaLengkap" name="namaLengkap" required>
+          </div>
+          <div>
+            <label for="alamatEmail">Alamat Email:</label>
+            <input type="email" id="alamatEmail" name="alamatEmail" required>
+          </div>
+          <div>
+            <label for="nomorTelepon">Nomor Telepon:</label>
+            <input type="tel" id="nomorTelepon" name="nomorTelepon" required>
+          </div>
+          <div>
+            <label for="tanggalPemesanan">Tanggal Pemesanan:</label>
+            <input type="date" id="tanggalPemesanan" name="tanggalPemesanan" required>
+          </div>
+          <div>
+            <label for="jumlahOrang">Jumlah Orang:</label>
+            <input type="number" id="jumlahOrang" name="jumlahOrang" min="1" required>
+          </div>
+          <div>
+            <label for="metodePembayaran">Metode Pembayaran:</label>
+            <select id="metodePembayaran" name="metodePembayaran" required>
+              <option value="">-- Pilih Metode Pembayaran --</option>
+              <option value="Transfer Bank">Transfer Bank</option>
+              <option value="Kartu Kredit">Kartu Kredit</option>
+              <option value="E-Wallet">E-Wallet</option>
+            </select>
+          </div>
+          <div>
+            <label for="catatan">Catatan:</label>
+            <textarea id="catatan" name="catatan"></textarea>
+          </div>
+          <button type="submit">Pesan Sekarang</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Tour Wisata. All rights reserved.</p>
+    </div>
+  </footer>
+  </body>
+</html>  
